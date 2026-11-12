@@ -9,7 +9,7 @@ Measured on an Apple M4 Max (40-core GPU, 64 GB), sampling at T = 0.6 and top-p 
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="img/decode-dark.png">
-  <img src="img/decode.png" width="720" alt="Decode speed against MLX by context and sequences in parallel, for 8-bit and bf16 weights">
+  <img src="img/decode.png" width="1000" alt="Decode speed against MLX by context and sequences in parallel, for 8-bit and bf16 weights">
 </picture>
 
 Tokens per second across all sequences, by sequences in parallel.
@@ -36,21 +36,21 @@ Tokens per second across all sequences, by sequences in parallel.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="img/parallel-dark.png">
-  <img src="img/parallel.png" width="720" alt="Decode speed with the drafter, plain and on MLX at 8k and 64k tokens of context, 8-bit weights">
+  <img src="img/parallel.png" width="1000" alt="Decode speed with the drafter, plain and on MLX at 8k and 64k tokens of context, 8-bit weights">
 </picture>
 
 ### Over MLX
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="img/over-mlx-dark.png">
-  <img src="img/over-mlx.png" width="720" alt="Decode speed over MLX's, plain and with the drafter, by context and sequences in parallel">
+  <img src="img/over-mlx.png" width="1000" alt="Decode speed over MLX's, plain and with the drafter, by context and sequences in parallel">
 </picture>
 
 ### What the drafter adds
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="img/drafter-speedup-dark.png">
-  <img src="img/drafter-speedup.png" width="720" alt="Decode speed with the drafter over plain decoding, by context and sequences in parallel">
+  <img src="img/drafter-speedup.png" width="1000" alt="Decode speed with the drafter over plain decoding, by context and sequences in parallel">
 </picture>
 
 ## Prefill
@@ -59,7 +59,7 @@ One prompt, tokens per second and seconds for the whole prompt. The drafter does
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="img/prefill-dark.png">
-  <img src="img/prefill.png" width="720" alt="Prefill speed against MLX by context, 8-bit weights">
+  <img src="img/prefill.png" width="1000" alt="Prefill speed against MLX by context, 8-bit weights">
 </picture>
 
 | Context | Silicon Violetto 8-bit | MLX 8-bit | Silicon Violetto bf16 | MLX bf16 | HF bf16 |
@@ -76,7 +76,7 @@ AIME 2026 and HMMT February 2026. Both engines run 8-bit weights, Silicon Violet
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="img/evals-dark.png">
-  <img src="img/evals.png" width="720" alt="Accuracy and speed of Silicon Violetto and MLX on AIME 2026 and HMMT February 2026">
+  <img src="img/evals.png" width="1000" alt="Accuracy and speed of Silicon Violetto and MLX on AIME 2026 and HMMT February 2026">
 </picture>
 
 | | Engine | avg@32 | Hit the token cap | Median tokens | Tokens | Hours | tok/s |
@@ -92,7 +92,7 @@ Distance from the model computed in fp32, over 4,086 next-token predictions on t
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="img/parity-dark.png">
-  <img src="img/parity.png" width="720" alt="KL divergence from fp32 and share of predictions whose top token differs, for Silicon Violetto, MLX and HF in bf16 and 8-bit">
+  <img src="img/parity.png" width="1000" alt="KL divergence from fp32 and share of predictions whose top token differs, for Silicon Violetto, MLX and HF in bf16 and 8-bit">
 </picture>
 
 | Weights | Engine | Mean KL divergence | Next token differs |

@@ -10,7 +10,7 @@ uv run hf download Belluxx/limite-1b-violetto-drafter drafter.vlt --local-dir da
 ./target/release/violetto serve --weights models/limite-int8.vlt --drafter data/spec/drafter.vlt
 ```
 
-**Important**: remember to raise `--max-seqs` (which is the default) depending on your workload.
+**Important**: remember to raise `--max-seqs` (which is the defaulted to `1`) depending on your workload.
 
 ## Architecture
 
