@@ -1,0 +1,10 @@
+[package]
+name = "violetto"
+version = "0.1.0"
+edition = "2021"
+description = "Metal inference core for limite-1b-violetto. Token IDs in, token IDs / logits out."
+
+[dependencies]
+objc2 = "0.6"
+objc2-foundation = { version = "0.3", default-features = false, features = ["std", "NSString", "NSError"] }
+objc2-metal = { version = "0.3", default-features = false, features = ["std", "MTLDevice", "MTLBuffer", "MTLResource", "MTLAllocation", "MTLLibrary", "MTLCommandQueue", "MTLCommandBuffer", "MTLCommandEncoder", "MTLComputeCommandEncoder", "MTLComputePipeline", "MTLTypes", "MTLStageInputOutputDescriptor", "MTLPipeline", "MTLBlitCommandEncoder", "objc2-core-foundation"] }
